@@ -1,8 +1,9 @@
 # Atividade de Framework
 
 <div>
-  <img src="https://img.shields.io/static/v1?message=Aula%20de%20Framework&color=0070f3" alt="Powered by" />
-  <img src="https://img.shields.io/static/v1?message=Node&color=00aa00&logo=node" alt="Powered by" />
+  <img src="https://img.shields.io/static/v1?label=Escola&message=Aula%20de%20Framework&color=0070f3" alt="Powered by" />
+  <img src="https://img.shields.io/static/v1?label=Backend&message=Node&color=00aa00&logo=node" alt="Powered by" />
+  <img src="https://img.shields.io/static/v1?label=Frontend&message=NextJS&color=0070f3&logo=node" alt="Powered by" />
 </div>
 
 ## Aplicação para criação de posts
