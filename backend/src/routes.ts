@@ -24,7 +24,7 @@ interface IPost {
   name: string;
   content: string;
   imgURL: string;
-  comentarios: [] | [{ author: string; content: string }];
+  comments: string[];
 }
 
 // Array de POSTS
@@ -46,6 +46,17 @@ routes.get("/post", (req, res) => {
   }
 });
 
+routes.post("/comment/:id", (req, res) => {
+  const { comment } = req.body;
+  posts.forEach((post) => {
+    if (post.id === req.params.id) {
+      post.comments.push(comment);
+    }
+  });
+
+  res.status(201);
+});
+
 routes.post("/post", upload.single("image"), (req, res) => {
   try {
     // Desetruturação de "strings" do "req.body"
@@ -64,7 +75,7 @@ routes.post("/post", upload.single("image"), (req, res) => {
       name,
       content,
       imgURL: `http://192.168.0.36:3001/uploads/${filename}`,
-      comentarios: [],
+      comments: [],
     };
 
     console.log(newPost);

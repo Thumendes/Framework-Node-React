@@ -24,7 +24,9 @@ const Form = () => {
     data.append("content", contentRef.current.value);
     data.append("image", file);
 
-    await api.post("post", data);
+    const response = await api.post("post", data);
+
+    console.log("hello");
   }
 
   return (

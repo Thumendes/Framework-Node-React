@@ -12,6 +12,8 @@
 - A imagem será armazenada na pasta `backend/uploads`
 - Ao carregar a página o usuário verá todas as publicações
 
+- Na branch de comentários, a funcionalidade já está pronta
+
 ## Como iniciar
 
 Faça clone do projeto, e abra o terminal na pasta raíz, e então siga os caminhos abaixo:
@@ -28,7 +30,7 @@ Para instalar as dependências utilize:
 yarn ou npm install
 ```
 
-Para rodar a aplicação na porta 3001: 
+Para rodar a aplicação na porta 3001:
 
 ```bash
 yarn dev ou npm run dev
@@ -46,12 +48,11 @@ Para instalar as dependências utilize:
 yarn ou npm install
 ```
 
-Para rodar a aplicação na porta 3000: 
+Para rodar a aplicação na porta 3000:
 
 ```bash
 yarn dev ou npm run dev
 ```
-
 
 ## Resultado da aplicação:
 
